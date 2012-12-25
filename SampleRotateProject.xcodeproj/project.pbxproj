@@ -21,6 +21,12 @@
 		13EC95F91689A7D700471005 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EC95DA1689A7D600471005 /* Foundation.framework */; };
 		13EC96011689A7D700471005 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13EC95FF1689A7D700471005 /* InfoPlist.strings */; };
 		13EC96041689A7D700471005 /* SampleRotateProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EC96031689A7D700471005 /* SampleRotateProjectTests.m */; };
+		13EC96101689A81400471005 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EC960E1689A81400471005 /* BaseViewController.m */; };
+		13EC96111689A81400471005 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13EC960F1689A81400471005 /* BaseViewController.xib */; };
+		13EC96151689A91100471005 /* TypeAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EC96131689A91100471005 /* TypeAViewController.m */; };
+		13EC96161689A91100471005 /* TypeAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13EC96141689A91100471005 /* TypeAViewController.xib */; };
+		13EC961B1689A92000471005 /* TypeBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EC96191689A92000471005 /* TypeBViewController.m */; };
+		13EC961C1689A92000471005 /* TypeBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13EC961A1689A92000471005 /* TypeBViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,15 @@
 		13EC96001689A7D700471005 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13EC96021689A7D700471005 /* SampleRotateProjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleRotateProjectTests.h; sourceTree = "<group>"; };
 		13EC96031689A7D700471005 /* SampleRotateProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleRotateProjectTests.m; sourceTree = "<group>"; };
+		13EC960D1689A81400471005 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		13EC960E1689A81400471005 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		13EC960F1689A81400471005 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		13EC96121689A91100471005 /* TypeAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeAViewController.h; sourceTree = "<group>"; };
+		13EC96131689A91100471005 /* TypeAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeAViewController.m; sourceTree = "<group>"; };
+		13EC96141689A91100471005 /* TypeAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeAViewController.xib; sourceTree = "<group>"; };
+		13EC96181689A91F00471005 /* TypeBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeBViewController.h; sourceTree = "<group>"; };
+		13EC96191689A92000471005 /* TypeBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeBViewController.m; sourceTree = "<group>"; };
+		13EC961A1689A92000471005 /* TypeBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeBViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +130,15 @@
 				13EC95E71689A7D600471005 /* AppDelegate.h */,
 				13EC95E81689A7D700471005 /* AppDelegate.m */,
 				13EC95DF1689A7D600471005 /* Supporting Files */,
+				13EC960D1689A81400471005 /* BaseViewController.h */,
+				13EC960E1689A81400471005 /* BaseViewController.m */,
+				13EC960F1689A81400471005 /* BaseViewController.xib */,
+				13EC96121689A91100471005 /* TypeAViewController.h */,
+				13EC96131689A91100471005 /* TypeAViewController.m */,
+				13EC96141689A91100471005 /* TypeAViewController.xib */,
+				13EC96181689A91F00471005 /* TypeBViewController.h */,
+				13EC96191689A92000471005 /* TypeBViewController.m */,
+				13EC961A1689A92000471005 /* TypeBViewController.xib */,
 			);
 			path = SampleRotateProject;
 			sourceTree = "<group>";
@@ -227,6 +251,9 @@
 				13EC95EB1689A7D700471005 /* Default.png in Resources */,
 				13EC95ED1689A7D700471005 /* Default@2x.png in Resources */,
 				13EC95EF1689A7D700471005 /* Default-568h@2x.png in Resources */,
+				13EC96111689A81400471005 /* BaseViewController.xib in Resources */,
+				13EC96161689A91100471005 /* TypeAViewController.xib in Resources */,
+				13EC961C1689A92000471005 /* TypeBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +290,9 @@
 			files = (
 				13EC95E51689A7D600471005 /* main.m in Sources */,
 				13EC95E91689A7D700471005 /* AppDelegate.m in Sources */,
+				13EC96101689A81400471005 /* BaseViewController.m in Sources */,
+				13EC96151689A91100471005 /* TypeAViewController.m in Sources */,
+				13EC961B1689A92000471005 /* TypeBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +392,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleRotateProject/SampleRotateProject-Prefix.pch";
 				INFOPLIST_FILE = "SampleRotateProject/SampleRotateProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -373,7 +405,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleRotateProject/SampleRotateProject-Prefix.pch";
 				INFOPLIST_FILE = "SampleRotateProject/SampleRotateProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -431,6 +465,7 @@
 				13EC96091689A7D700471005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13EC960A1689A7D700471005 /* Build configuration list for PBXNativeTarget "SampleRotateProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +474,7 @@
 				13EC960C1689A7D700471005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

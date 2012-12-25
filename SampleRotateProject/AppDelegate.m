@@ -8,15 +8,89 @@
 
 #import "AppDelegate.h"
 
+
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    //baseViewを設置
+    baseViewCont = [[BaseViewController alloc]init];
+    [self.window addSubview:baseViewCont.view];
+    self.window.rootViewController = baseViewCont;
+    
+    
+    //最初のビューとしてAを初期化
+    tAViewCont = [[TypeAViewController alloc]init];
+
+    //baseにadd
+    [baseViewCont.view addSubview:tAViewCont.view];
+    
+    //最初のstateはA
+    [self setState:STATE_A];
+    
+    
+    //サンプルなので適当にBも初期化
+    tBViewCont = [[TypeBViewController alloc]init];
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+
+
+/*
+ ステート
+ */
+int m_state;
+- (int) state {
+    return m_state;
+}
+
+- (void) setState:(int)nextState {
+    m_state = nextState;
+}
+
+
+/*
+ rotation control
+ */
+- (void) shouldRotateOrNot {
+    switch ([self state]) {
+        case STATE_A:{
+            [baseViewCont setRotate:false];
+        }
+            break;
+            
+        case STATE_B:{
+            [baseViewCont setRotate:true];
+        }
+            break;
+            
+        default:{
+            [baseViewCont setRotate:false];
+        } 
+            break;
+    }
+}
+
+
+- (void) toB {
+    [self setState:STATE_B];
+    [tAViewCont.view removeFromSuperview];
+    tBViewCont = [[TypeBViewController alloc]init];
+    [baseViewCont.view addSubview:tBViewCont.view];
+}
+
+- (void) toA {
+    [self setState:STATE_A];
+    [tBViewCont.view removeFromSuperview];
+    tAViewCont = [[TypeAViewController alloc]init];
+    [baseViewCont.view addSubview:tAViewCont.view];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

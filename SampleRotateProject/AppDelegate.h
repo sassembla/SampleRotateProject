@@ -8,7 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "BaseViewController.h"
+
+#import "TypeAViewController.h"
+#import "TypeBViewController.h"
+
+enum STATE {
+    STATE_A = 0,
+    STATE_B
+};
+
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    BaseViewController * baseViewCont;
+    
+    TypeAViewController * tAViewCont;
+    TypeBViewController * tBViewCont;
+    
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
