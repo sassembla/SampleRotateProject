@@ -1,4 +1,4 @@
 Rotation control sample.
 
 
-use "m_state" for decide rotate or not.
+use "m_state" to decide rotate or not at each state of view.
